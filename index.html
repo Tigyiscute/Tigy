@@ -4,14 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PantherHub - Invite Rewards</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #f39c12;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+        ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+        a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e67e22;
+        }
+        #rewardMessage {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            display: none;
+            color: #2ecc71;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>PantherHub - Invite Rewards</h1>
+        <h1><i class="fas fa-gift"></i> PantherHub - Invite Rewards</h1>
         
         <section id="gamepass">
-            <h2>How to Create a Roblox Gamepass</h2>
+            <h2><i class="fas fa-gamepad"></i> How to Create a Roblox Gamepass</h2>
             <ol>
                 <li>Go to <a href="https://www.roblox.com/develop" target="_blank">Roblox Develop Page</a>.</li>
                 <li>Select a game and click 'Store'.</li>
@@ -22,7 +80,7 @@
         </section>
         
         <section id="invite">
-            <h2>How to Invite Your Friends</h2>
+            <h2><i class="fas fa-user-plus"></i> How to Invite Your Friends</h2>
             <ol>
                 <li>Join our Discord server: <a href="https://discord.gg/44d8RJWg2j" target="_blank">PantherHub</a>.</li>
                 <li>Go to the invite section in Discord.</li>
@@ -32,8 +90,8 @@
             </ol>
         </section>
         
-        <button id="claimReward">Claim Reward</button>
-        <p id="rewardMessage" style="display: none;">Thank you for participating! Your reward will be processed soon.</p>
+        <button id="claimReward"><i class="fas fa-coins"></i> Claim Reward</button>
+        <p id="rewardMessage"><i class="fas fa-check-circle"></i> Thank you for participating! Your reward will be processed soon.</p>
     </div>
 
     <script>
