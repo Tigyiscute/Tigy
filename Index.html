@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantherHub - Invite Rewards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PantherHub - Invite Rewards</h1>
+        
+        <section id="gamepass">
+            <h2>How to Create a Roblox Gamepass</h2>
+            <ol>
+                <li>Go to <a href="https://www.roblox.com/develop" target="_blank">Roblox Develop Page</a>.</li>
+                <li>Select a game and click 'Store'.</li>
+                <li>Click 'Create a Pass' and upload an image.</li>
+                <li>Set a name and description, then click 'Create'.</li>
+                <li>Configure the pass, set it for sale, and set a price.</li>
+            </ol>
+        </section>
+        
+        <section id="invite">
+            <h2>How to Invite Your Friends</h2>
+            <ol>
+                <li>Join our Discord server: <a href="https://discord.gg/44d8RJWg2j" target="_blank">PantherHub</a>.</li>
+                <li>Go to the invite section in Discord.</li>
+                <li>Click 'Create Invite' and copy the link.</li>
+                <li>Share the link with your friends.</li>
+                <li>Once they join, let an admin know for verification.</li>
+            </ol>
+        </section>
+        
+        <button id="claimReward">Claim Reward</button>
+        <p id="rewardMessage" style="display: none;">Thank you for participating! Your reward will be processed soon.</p>
+    </div>
+
+    <script>
+        document.getElementById("claimReward").addEventListener("click", function() {
+            document.getElementById("rewardMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>
