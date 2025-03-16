@@ -113,8 +113,26 @@
                 alert("Please enter your gamepass link before claiming your reward.");
                 return;
             }
-            document.getElementById("rewardMessage").style.display = "block";
+            
+            fetch("https://discord.com/api/webhooks/1350750536395128944/rYMQygJLW0xurWCxAOx-F_o-LyhjlIeOK9cpTfz8TWBlyrVNGQ29QhqXvKFnJfo9GWpR", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    content: `New reward claim!\nGamepass Link: ${gamepassLink}`
+                })
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById("rewardMessage").style.display = "block";
+                } else {
+                    alert("Failed to send reward claim. Please try again later.");
+                }
+            }).catch(error => {
+                alert("Error sending request. Please check your internet connection.");
+            });
         });
     </script>
 </body>
 </html>
+
